@@ -37,6 +37,17 @@
 	</style>
 
 	<script type="text/javascript">
+		function upDate(i){
+			document.getElementById('image').style.backgroundImage="url('"+i.src+"')";
+			document.getElementById('image').innerHTML = i.alt;
+		}
+
+
+		function unDo(){
+			document.getElementById('image').style.backgroundImage="url()";
+			document.getElementById('image').innerHTML= "Hover over an image below.";
+		}
+
 	// I used Two functions here.  Starter idea at:
 	// https://codepen.io/ColleenEMc/pen/XmZzWw
 	</script>
@@ -44,25 +55,28 @@
 
 <body>
 	<h1>Challenge 5</h1>
-		<div id = "image">
+		<div id = "image" style = 'background-image: url("");'>
 			Hover over an image below.
 		</div>
 
 		<!-- Your code goes in the img tag below.  Make sure to react to "hovering" and "tabbing": -->
-		<img class = "preview"
-			alt = "Styling with a Bandana"
-			src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon.jpg";
-			>
+		<img class = "preview" onfocus = "upDate(this)" onblur = 'unDo()' onmouseover = 'upDate(this)' onmouseleave = 'unDo()' alt = "Styling with a Bandana" src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon.jpg"; >
 
 
 		<!-- Your code goes in the img tag below.  Make sure to react to "hovering" and "tabbing": -->
 		<img class = "preview"
+			tabindex = '1'
+			onfocus = 'upDate(this)'
+			onblur = 'unDo()'
+			onmouseover = 'upDate(this)'
+			onmouseleave = 'unDo()'
+
 			alt = "With My Boy"
 			src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon2.JPG";>
 
 		<!-- Your code goes in the img tag below.  Make sure to react to "hovering" and "tabbing": -->
 		<img class = "preview" tabindex = "1"
 			src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon3.jpg"
-			alt = "Young Puppy";>
+			alt = "Young Puppy" onfocus = "upDate(this)" onblur = 'unDo()' onmouseover = 'upDate(this)' onmouseleave = 'unDo()';>
 </body>
 </html>

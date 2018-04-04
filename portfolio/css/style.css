@@ -1,0 +1,174 @@
+/*-----MAIN-----*/
+html {
+  box-sizing: border-box;
+}
+html, body{
+	height: 100%;
+}
+
+html, body, header, footer{
+    background-color: #ECECEA;
+    font-family: 'Verdana', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header, footer, .logo {
+	background-color: #b3446c;
+	color: #DDDDDA;
+}
+/*body{
+	display: flex;
+	flex-direction: column;
+}*/
+h1, h2, h3, h4, h5, h6{
+	font-family: 'Verdana', sans-serif;
+}
+p{
+	font-family: 'Verdana', sans-serif;
+}
+.main-content{
+	flex: 1 0 auto;
+	margin-top: 110px;
+}
+
+/*-----HEADER & NAVIGATION-----*/
+header{
+	font-family: 'Verdana', sans-serif;
+	font-size: 105%;
+    box-shadow: 0px 18px 26px 1px rgba(141, 141, 139, .75);
+    width: 100%;
+    position: fixed;
+}
+/*mobile-first*/
+.top-nav ul{
+	list-style-type: none;
+	padding: 0;
+	background-color: #b3446c; /*CHANGE*/
+	margin: 0;
+	display: block;
+}
+.top-nav ul li, .menu-icon{
+	border-top: 3px solid #DDDDDA;
+}
+.top-nav ul li a{
+	font-size: 1em;
+	color: #FFFFFF;
+	text-decoration: none;
+	padding: .5em 1em;
+	display: block;
+	text-align: center;
+}
+.menu-icon a{
+	font-size: 1em;
+	color: #DDDDDA;
+	text-decoration: none;
+	padding: .5em 1em;
+	display: block;
+	text-align: center;
+}
+.top-nav ul li a.current-page{
+	color: #FFFFFF;
+	font-weight: bold;
+}
+.top-nav ul li a.current-page:before{
+  content: "\2055  ";
+  color: #FFFFFF;
+  padding-right: 4px;
+  position: relative;
+  bottom: 2px;
+}
+.top-nav ul li a:hover, .menu-icon a:hover, .top-nav ul li a:focus, .menu-icon a:focus{
+    background-color: #DB7093;
+    color: #C71585;
+    font-weight: bold;
+}
+.top-nav ul li a:hover:before, .top-nav ul li a:focus:before{
+    content: "\2026  ";
+  	color: #DDDDDA;
+  	padding-right: 4px;
+  	position: relative;
+  	bottom: 2px;
+}
+/*implement menu toogle*/
+.top-nav.toggle-open ul{
+	display: block;
+}
+
+/*-----LOGO-----*/
+.logo{
+	background-color: #b3446c; /*CHANGE*/
+	margin: 0;
+	text-align: center;
+	padding: .25em .75em;
+}
+.logo img{
+	height: 3em;
+}
+
+/*-----FOOTER-----*/
+footer{
+	font-size: .85em;
+	text-align: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+	box-shadow: 0px -10px 30px 2px rgba(141, 141, 139, .75);
+}
+footer p{
+	padding-top: .5em;
+	padding-bottom: .75em;
+}
+
+.icon{
+	padding: .5em .25em 0;
+	height: 25px;
+}
+
+/*-----HOMEPAGE-----*/
+.main-content-home{
+	margin-top: 250px;
+}
+.home-flag{
+  height: 300px;
+  width: 300px;
+  background-color: #555;
+  border-radius: 75%;
+	background-color: #DB7093;
+	color: #DDDDDA;
+	display: inline-block;
+	/*max-width: 400px;*/
+	margin: 40px;
+	padding: 1.7em;
+	box-shadow: 0px 8px 10px gray, -10px 8px 15px gray, 10px 8px 15px gray;
+}
+.home-flag p {
+  text-align: center;
+vertical-align: middle;
+line-height: 90px;
+}
+
+.circles{
+  text-align: center;
+  padding-top: 120px;
+}
+
+/*-----IMAGES PAGE ------*/
+.main-content-crafts{
+	margin-top: 250px;
+}
+/*photo gallery*/
+.crafts{
+	display: block;
+	margin: auto;
+	max-width: 1200px;
+}
+.photo-cell{
+	margin-bottom: 2%;
+	margin-left: 2%;
+}
+.photo-cell img {
+	width: 98%;
+  	display: block;
+  	box-shadow: 0px 0px 10px rgba(141, 141, 139, .75);
+}

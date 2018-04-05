@@ -6,6 +6,18 @@
     <script type="text/javascript">
     function checkForm(){
     	// Write a function that ensures at least one but ONLY one radio button is selected.  Make sure the form action is not performed if either field is blank.
+      var opt_straw = document.querySelector('#opt-straw');
+      var opt_blue = document.querySelector('#opt-blue');
+      if (opt_straw.checked == true) {
+        return true;
+      }
+      if (opt_blue.checked == true) {
+        return true;
+      }
+      else {
+        alert('Please select your favorite berry!');
+        return false;
+      }
 		}
     </script>
 </head>

@@ -12,7 +12,23 @@
 
     <script type="text/javascript">
     function checkForm(){
-    	// Write a function that displays the appropriate error message(s) if a field is left blank.  Make sure the form action is not performed if either field is blank.
+        // Write a function that displays the appropriate error message(s) if a field is left blank.  Make sure the form action is not performed if either field is blank.
+      var fullname = document.querySelector('#fullname').value;
+      var streetaddr = document.querySelector('#streetaddr').value;
+      var nameError = document.getElementById('nameerrormsg');
+      var streetError = document.getElementById('addrerrormsg');
+
+      if (!fullname && !streetaddr) {
+        return false;
+      }
+      if (!fullname) {
+        nameError.style.display = "block";
+        return false;
+      }
+      if (!streetaddr) {
+        streetError.style.display = "block";
+        return false;
+      }
     }
     </script>
 </head>

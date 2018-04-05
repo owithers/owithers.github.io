@@ -13,7 +13,7 @@ html, body, header, footer{
     padding: 0;
 }
 header, footer, .logo {
-	background-color: #b3446c;
+	background-color: #98AFC7;
 	color: #DDDDDA;
 }
 /*body{
@@ -26,10 +26,7 @@ h1, h2, h3, h4, h5, h6{
 p{
 	font-family: 'Verdana', sans-serif;
 }
-.main-content{
-	flex: 1 0 auto;
-	margin-top: 110px;
-}
+
 
 /*-----HEADER & NAVIGATION-----*/
 header{
@@ -43,7 +40,7 @@ header{
 .top-nav ul{
 	list-style-type: none;
 	padding: 0;
-	background-color: #b3446c; /*CHANGE*/
+	background-color: #98AFC7; /*CHANGE*/
 	margin: 0;
 	display: block;
 }
@@ -78,8 +75,8 @@ header{
   bottom: 2px;
 }
 .top-nav ul li a:hover, .menu-icon a:hover, .top-nav ul li a:focus, .menu-icon a:focus{
-    background-color: #DB7093;
-    color: #C71585;
+    background-color: #2B547E;
+    color: #98AFC7;
     font-weight: bold;
 }
 .top-nav ul li a:hover:before, .top-nav ul li a:focus:before{
@@ -96,7 +93,7 @@ header{
 
 /*-----LOGO-----*/
 .logo{
-	background-color: #b3446c; /*CHANGE*/
+	background-color: #98AFC7; /*CHANGE*/
 	margin: 0;
 	text-align: center;
 	padding: .25em .75em;
@@ -134,7 +131,7 @@ footer p{
   width: 300px;
   background-color: #555;
   border-radius: 75%;
-	background-color: #DB7093;
+	background-color: #2B547E;
 	color: #DDDDDA;
 	display: inline-block;
 	/*max-width: 400px;*/
@@ -149,6 +146,11 @@ line-height: 90px;
 }
 
 .circles{
+  text-align: center;
+  padding-top: 120px;
+}
+
+.main-content{
   text-align: center;
   padding-top: 120px;
 }

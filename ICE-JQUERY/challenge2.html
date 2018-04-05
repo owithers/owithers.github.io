@@ -1,25 +1,27 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<title>Challenge Two</title>
-    
-     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
-    $(document).ready(function(){ 
-      $("#useBilling").on("change", function(){
-       if (this.checked) {
-        $("#home").val($("#billing").val());
-        $("#home").prop('disabled', true);
+    // 'this' is a checbox
+    $(document).ready(function(){
+      $('#useBilling').on('change', function(){
+        if(this.checked){
+          $('#home').val($('#billing').val());
+          $('#home').prop('disabled', true);
         }
-      //   else{
-      //    $("selector").val("");
-      //    $("selector").prop('attribute', false);
-      // }
+        else{
+          $('#home').val('');
+          $('#home').prop('disabled', false);
+        }
+      })
     });
-});
-</script>
+      // YOUR CODE HERE
+    </script>
 </head>
 <body>
     <h1>Challenge Two</h1>
@@ -43,15 +45,3 @@
       </fieldset>
 </body>
 </html>
-
-<!-- $(document).ready(function(){ 
-      $("#useBilling").on("mouseout", function(){
-       if (this.checked) {
-        $("#home").val($("#billing").val());
-        $("#home").prop('disabled', true);
-        }
-        else{
-         $("#home").val("");
-         $("#home").prop('disabled', false);
-      }
-    }); -->

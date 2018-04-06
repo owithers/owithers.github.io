@@ -11,30 +11,43 @@
     </style>
 
     <script type="text/javascript">
-    function checkForm() {
-			var fullName = document.getElementById('fullname').value;
-			var streetAddress = document.getElementById('streetaddr').value;
-			var nameErrorMsg = document.getElementById('nameerrormsg');
-			var addressErrorMsg = document.getElementById('addrerrormsg');
-			if ((fullName == '') && (streetAddress == '')){
-				nameErrorMsg.style.display = 'block';
-				addressErrorMsg.style.display = 'block';
-				return false;
-			} else if (fullName == '') {
-				nameErrorMsg.style.display = 'block';
-				return false;
-			} else if (streetAddress == '') {
-				addressErrorMsg.style.display = 'block';
-				return false;
-			} else {
-				return true;
-			}
-			}
+    function checkForm(){
+        var name = document.myForm.fullname.value;
+        var address = document.myForm.streetaddr.value;
+
+
+        var nameerrormsg = document.getElementById("nameerrormsg");
+        var addrerrormsg = document.getElementById("addrerrormsg");
+
+
+        if (address == "" && name == "") {
+            nameerrormsg.style.display = "block";
+            addrerrormsg.style.display = "block";
+            return false;
+        } else if (address == "") {
+            nameerrormsg.style.display = "none";
+            addrerrormsg.style.display = "block";
+            return false;
+
+        } else if (name == "") {
+            nameerrormsg.style.display = "block";
+            addrerrormsg.style.display = "none";
+            return false;
+
+        } else {
+            nameerrormsg.style.display = "none";
+            addrerrormsg.style.display = "none";
+            return true;
+
+        }
+    }
+
+
     </script>
 </head>
 <body>
     <h1>Challenge 4</h1>
-	<form action="challenge5.html" onsubmit="return checkForm();">
+    <form name="myForm" action="challenge5.html" onsubmit="return checkForm();">
         <fieldset>
         <legend>Personal details</legend>
           <label for="fullname">Full name: </label>

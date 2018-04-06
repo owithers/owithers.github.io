@@ -16,10 +16,7 @@ header, footer, .logo {
 	background-color: #98AFC7;
 	color: #FFF;
 }
-/*body{
-	display: flex;
-	flex-direction: column;
-}*/
+
 h1, h2, h3, h4, h5, h6{
 	font-family: 'Verdana', sans-serif;
 }
@@ -40,7 +37,7 @@ header{
 .top-nav ul{
 	list-style-type: none;
 	padding: 0;
-	background-color: #98AFC7; /*CHANGE*/
+	background-color: #98AFC7;
 	margin: 0;
 	display: block;
 }
@@ -86,14 +83,14 @@ header{
   	position: relative;
   	bottom: 2px;
 }
-/*implement menu toogle*/
+
 .top-nav.toggle-open ul{
 	display: block;
 }
 
-/*-----LOGO-----*/
+
 .logo{
-	background-color: #98AFC7; /*CHANGE*/
+	background-color: #98AFC7;
 	margin: 0;
 	text-align: center;
 	padding: .25em .75em;
@@ -102,7 +99,7 @@ header{
 	height: 3em;
 }
 
-/*-----FOOTER-----*/
+
 footer{
 	font-size: .85em;
 	text-align: center;
@@ -122,7 +119,7 @@ footer p{
 	height: 25px;
 }
 
-/*-----HOMEPAGE-----*/
+
 .main-content-home{
 	margin-top: 250px;
 }
@@ -134,7 +131,6 @@ footer p{
 	background-color: #2B547E;
 	color: #DDDDDA;
 	display: inline-block;
-	/*max-width: 400px;*/
 	margin: 40px;
 	padding: 1.7em;
 	box-shadow: 0px 8px 10px gray, -10px 8px 15px gray, 10px 8px 15px gray;
@@ -155,12 +151,7 @@ line-height: 90px;
   padding-top: 120px;
 }
 
-/*-----IMAGES PAGE ------*/
-.main-content-crafts{
-	margin-top: 250px;
-}
-/*photo gallery*/
-.crafts{
+.photos{
 	display: block;
 	margin: auto;
 	max-width: 1200px;

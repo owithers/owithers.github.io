@@ -14,7 +14,7 @@ html, body, header, footer{
 }
 header, footer, .logo {
 	background-color: #98AFC7;
-	color: #DDDDDA;
+	color: #FFF;
 }
 /*body{
 	display: flex;

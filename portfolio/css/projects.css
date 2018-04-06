@@ -1,3 +1,11 @@
 .aboutme {
     border-radius: 50%;
+    height: 300px;
+}
+.about{
+  display: inline-flex;
+  padding-top: 175px;
+}
+h1{
+  text-decoration: underline;
 }

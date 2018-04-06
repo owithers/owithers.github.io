@@ -5,31 +5,31 @@
 	<title>Challenge 4</title>
     <style>
     .errormsg {
-        /*font: Use a cool Google font*/
+      font-family: 'Verdana', sans-serif;
     	color:red;
     	display:none; }
     </style>
 
     <script type="text/javascript">
-    function checkForm(){
-        // Write a function that displays the appropriate error message(s) if a field is left blank.  Make sure the form action is not performed if either field is blank.
-      var fullname = document.querySelector('#fullname').value;
-      var streetaddr = document.querySelector('#streetaddr').value;
-      var nameError = document.getElementById('nameerrormsg');
-      var streetError = document.getElementById('addrerrormsg');
-
-      if (!fullname && !streetaddr) {
-        return false;
-      }
-      if (!fullname) {
-        nameError.style.display = "block";
-        return false;
-      }
-      if (!streetaddr) {
-        streetError.style.display = "block";
-        return false;
-      }
-    }
+    function checkForm() {
+			var fullName = document.getElementById('fullname').value;
+			var streetAddress = document.getElementById('streetaddr').value;
+			var nameErrorMsg = document.getElementById('nameerrormsg');
+			var addressErrorMsg = document.getElementById('addrerrormsg');
+			if ((fullName == '') && (streetAddress == '')){
+				nameErrorMsg.style.display = 'block';
+				addressErrorMsg.style.display = 'block';
+				return false;
+			} else if (fullName == '') {
+				nameErrorMsg.style.display = 'block';
+				return false;
+			} else if (streetAddress == '') {
+				addressErrorMsg.style.display = 'block';
+				return false;
+			} else {
+				return true;
+			}
+			}
     </script>
 </head>
 <body>

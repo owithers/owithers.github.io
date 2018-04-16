@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Olivia Withers' Exam 2</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script>
+  function showhide() {
+    if (document.getElementById('doggo').style.visibility === 'hidden') {
+      document.getElementById('doggo').style.visibility = 'visible';
+    }
+    else {
+      document.getElementById('doggo').style.visibility = 'hidden';
+    }
+  }
+
+  function changetext() {
+    document.getElementById('text').innerHTML = document.getElementById('changer').value;
+    document.getElementById('changer').value = "";
+  }
+  </script>
+</head>
+
+
+<body class="body-home">
+  <div id="main-content" class="main-content">
+    <h1>Olivia's Exam</h1>
+    <p>Most recently I worked for <b>NBC New York</b> as a digital media intern. I learned a lot about the news industry and had a lot of fun in the process. <a href="https://www.nbcnewyork.com/results/?keywords=olivia+withers" target="_blank">Here</a> is a link to all of the articles I wrote last summer. </p>
+    <div class="row">
+      <img id='doggo' src = 'img/dog.jpeg' alt = "dog">
+      <button onclick='showhide()'>Show or hide dog!</button>
+      <p id='text'> For more information here is another link to my <a href="https://www.linkedin.com/in/olivia-withers/" target="_blank">LinkedIn</a> page.</p>
+    </div>
+    <form id="myForm">
+      Change to: <input type="text" name="name" id="changer"><br>
+      <input type="button" onclick="changetext()" value="Change text">
+    </form>
+  </div>
+</body>
+</html>

@@ -1,0 +1,14 @@
+img{
+  border: solid;
+  border-width: 5px;
+  padding: 5%;
+  border-color: blue;
+}
+.body-home{
+  background-image: url("../images/sun-pattern.png");
+}
+.row{
+  display: inline-flex;
+  width:100%;
+  margin: 0;
+}

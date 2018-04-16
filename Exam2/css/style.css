@@ -1,0 +1,21 @@
+body{
+  background-color: #98AFC7;
+}
+img{
+  width: 50%;
+}
+.row{
+  display: inline-flex;
+}
+@media only screen and (min-width: 651px) and (max-width: 1000px) {
+  p{
+    color:red;
+  }
+}
+
+@media only screen and (min-width: 1001px){
+  p{
+    font-family: 'Verdana', sans-serif;
+    color: green;
+  }
+}
